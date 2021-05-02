@@ -947,6 +947,7 @@ public class ConversationActivity extends PassphraseRequiredActivity
     });
 
     searchViewItem = menu.findItem(R.id.menu_search);
+    searchViewItem = menu.findItem(R.id.menu_call_search);
 
     SearchView                     searchView    = (SearchView) searchViewItem.getActionView();
     SearchView.OnQueryTextListener queryListener = new SearchView.OnQueryTextListener() {
@@ -1017,8 +1018,8 @@ public class ConversationActivity extends PassphraseRequiredActivity
     case R.id.menu_distribution_broadcast:    handleDistributionBroadcastEnabled(item);          return true;
     case R.id.menu_distribution_conversation: handleDistributionConversationEnabled(item);       return true;
     case R.id.menu_group_settings:            handleManageGroup();                               return true;
-    /* Nambah Group Menu Button */
-    case R.id.menu_group_notes:               handleGroupNotes();                               return true;
+    /* Nambah Search Button */
+    case R.id.menu_call_search:               handleSearchConversation();                              return true;
     case R.id.menu_leave:                     handleLeavePushGroup();                            return true;
     case R.id.menu_invite:                    handleInviteLink();                                return true;
     case R.id.menu_mute_notifications:        handleMuteNotifications();                         return true;
@@ -1333,6 +1334,11 @@ public class ConversationActivity extends PassphraseRequiredActivity
     searchViewModel.onSearchOpened();
   }
 
+  /* Buat handler utk Search button */
+  private void handleSearchConversation() {
+    searchViewModel.onSearchOpened();
+  }
+
   private void handleLeavePushGroup() {
     if (getRecipient() == null) {
       Toast.makeText(this, getString(R.string.ConversationActivity_invalid_recipient),
@@ -1348,13 +1354,6 @@ public class ConversationActivity extends PassphraseRequiredActivity
                            GROUP_EDIT,
                            ManageGroupActivity.createTransitionBundle(this, titleView.findViewById(R.id.contact_photo_image)));
   }
-  /* Buat handler utk grupnotes button */
-  private void handleGroupNotes() {
-    startActivityForResult(ManageGroupActivity.newIntent(ConversationActivity.this, recipient.get().requireGroupId()),
-            GROUP_EDIT,
-            ManageGroupActivity.createTransitionBundle(this, titleView.findViewById(R.id.contact_photo_image)));
-  }
-
   private void handleDistributionBroadcastEnabled(MenuItem item) {
     distributionType = ThreadDatabase.DistributionTypes.BROADCAST;
     item.setChecked(true);

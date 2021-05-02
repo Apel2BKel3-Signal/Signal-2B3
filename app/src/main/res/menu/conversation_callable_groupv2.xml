@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Nambah Button Notes&Album - Pari -->
-    <item android:title="@string/conversation_callable_secure__menu_video"
-        android:id="@+id/menu_group_notes"
-        android:icon="@drawable/ic_group_notes"
-        app:iconTint="@color/signal_icon_tint_primary"
-        app:showAsAction="always" />
+    <!-- Nambah Button Search -->
+    <item android:title="@string/SearchToolbar_search"
+        android:id="@+id/menu_call_search"
+        android:icon="@drawable/ic_search_24"
+        app:actionViewClass="org.thoughtcrime.securesms.components.SearchView"
+        app:showAsAction="collapseActionView|always"/>
 
     <item android:title="@string/conversation_callable_secure__menu_video"
           android:id="@+id/menu_video_secure"
           android:icon="@drawable/ic_video_call_24"
           app:iconTint="@color/signal_icon_tint_primary"
-          app:showAsAction="always" />
+          app:showAsAction="ifRoom" />
 
 </menu>
