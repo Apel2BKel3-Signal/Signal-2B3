@@ -2187,6 +2187,11 @@
     <string name="arrays__large">Large</string>
     <string name="arrays__extra_large">Extra large</string>
 
+    <string name="arrays__red">Red</string>
+    <string name="arrays__yellow">Yellow</string>
+    <string name="arrays__green">Green</string>
+    <string name="arrays__blue">Blue</string>
+
     <string name="arrays__default">Default</string>
     <string name="arrays__high">High</string>
     <string name="arrays__max">Max</string>
@@ -2270,6 +2275,7 @@
     <string name="preferences__appearance">Appearance</string>
     <string name="preferences__theme">Theme</string>
     <string name="preferences__chat_wallpaper">Chat wallpaper</string>
+    <string name="preferences__home_wallpaper">Home wallpaper</string>
     <string name="preferences__disable_pin">Disable PIN</string>
     <string name="preferences__enable_pin">Enable PIN</string>
     <string name="preferences__if_you_disable_the_pin_you_will_lose_all_data">If you disable the PIN, you will lose all data when you re-register Signal unless you manually back up and restore. You can not turn on Registration Lock while the PIN is disabled.</string>
@@ -2340,6 +2346,7 @@
     <string name="preferences_chats__show_invitation_prompts">Show invitation prompts</string>
     <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Display invitation prompts for contacts without Signal</string>
     <string name="preferences_chats__message_text_size">Message font size</string>
+    <string name="preferences_chats__message_sent_color">Sent Message color</string>
     <string name="preferences_events__contact_joined_signal">Contact joined Signal</string>
     <string name="preferences_notifications__priority">Priority</string>
     <string name="preferences_communication__category_sealed_sender">Sealed Sender</string>
@@ -3035,6 +3042,9 @@
     <!-- ChatWallpaperActivity -->
     <string name="ChatWallpaperActivity__chat_wallpaper">Chat wallpaper</string>
 
+    <!-- HomeWallpaperActivity -->
+    <string name="HomeWallpaperActivity__home_wallpaper">Home wallpaper</string>
+
     <!-- ChatWallpaperFragment -->
     <string name="ChatWallpaperFragment__set_wallpaper">Set wallpaper</string>
     <string name="ChatWallpaperFragment__dark_theme_dims_wallpaper">Dark theme dims wallpaper</string>
@@ -3048,9 +3058,26 @@
     <string name="ChatWallpaperFragment__clear">Clear</string>
     <string name="ChatWallpaperFragment__wallpaper_preview_description">Wallpaper preview</string>
 
+    <!-- HomeWallpaperFragment -->
+    <string name="HomeWallpaperFragment__set_wallpaper">Set wallpaper</string>
+    <string name="HomeWallpaperFragment__dark_theme_dims_wallpaper">Dark theme dims wallpaper</string>
+    <string name="HomeWallpaperFragment__clear_wallpaper">Clear wallpaper</string>
+    <string name="HomeWallpaperFragment__clear_wallpaper_for_this_chat">Clear wallpaper for this chat?</string>
+    <string name="HomeWallpaperFragment__clear_wallpaper_this_will_not">Clear wallpaper? This will not clear custom wallpapers you’ve set for your chats.</string>
+    <string name="HomeWallpaperFragment__reset_all_wallpapers">Reset all wallpapers</string>
+    <string name="HomeWallpaperFragment__reset_all_wallpapers_including_custom">Reset all wallpapers, including custom wallpapers you’ve set for your chats?</string>
+    <string name="HomeWallpaperFragment__contact_name">Contact name</string>
+    <string name="HomeWallpaperFragment__reset">Reset</string>
+    <string name="HomeWallpaperFragment__clear">Clear</string>
+    <string name="HomeWallpaperFragment__wallpaper_preview_description">Wallpaper preview</string>
+
     <!-- ChatWallpaperSelectionFragment -->
     <string name="ChatWallpaperSelectionFragment__choose_from_photos">Choose from photos</string>
     <string name="ChatWallpaperSelectionFragment__presets">Presets</string>
+
+    <!-- HomeWallpaperSelectionFragment -->
+    <string name="HomeWallpaperSelectionFragment__choose_from_photos">Choose from photos</string>
+    <string name="HomeWallpaperSelectionFragment__presets">Presets</string>
 
     <!-- ChatWallpaperPreviewActivity -->
     <string name="ChatWallpaperPreviewActivity__preview">Preview</string>
@@ -3059,6 +3086,14 @@
     <string name="ChatWallpaperPreviewActivity__set_wallpaper_for_all_chats">Set wallpaper for all chats</string>
     <string name="ChatWallpaperPreviewActivity__set_wallpaper_for_s">Set wallpaper for %1$s</string>
     <string name="ChatWallpaperPreviewActivity__viewing_your_gallery_requires_the_storage_permission">Viewing your gallery requires the storage permission.</string>
+
+    <!-- HomeWallpaperPreviewActivity -->
+    <string name="HomeWallpaperPreviewActivity__preview">Preview</string>
+    <string name="HomeWallpaperPreviewActivity__set_wallpaper">Set wallpaper</string>
+    <string name="HomeWallpaperPreviewActivity__swipe_to_preview_more_wallpapers">Swipe to preview more wallpapers</string>
+    <string name="HomeWallpaperPreviewActivity__set_wallpaper_for_all_chats">Set wallpaper for all chats</string>
+    <string name="HomeWallpaperPreviewActivity__set_wallpaper_for_s">Set wallpaper for %1$s</string>
+    <string name="HomeWallpaperPreviewActivity__viewing_your_gallery_requires_the_storage_permission">Viewing your gallery requires the storage permission.</string>
 
     <!-- WallpaperImageSelectionActivity -->
     <string name="WallpaperImageSelectionActivity__choose_wallpaper_image">Choose wallpaper image</string>
